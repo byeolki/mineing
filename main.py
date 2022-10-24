@@ -1,4 +1,4 @@
-import sqlite3, discord, datetime, pytz, func.jsonn as func, cooldowns, random, numpy as np
+import sqlite3, discord, datetime, pytz, func.jsonn as func, random, numpy as np
 from korcen import korcen
 from discord import Embed, ui
 from discord.ext import commands
