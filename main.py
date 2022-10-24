@@ -2,7 +2,6 @@ import sqlite3, discord, datetime, pytz, func.jsonn as func, random, numpy as np
 from korcen import korcen
 from discord import Embed, ui
 from discord.ext import commands
-from itertools import cycle
 from discord.commands import Option, option
 from discord_slash import SlashContext
 
@@ -15,7 +14,6 @@ bbobgi = ["돌", "돌", "돌", "돌", "돌", "돌", "돌", "돌", "구리", "구
 
 @client.event
 async def on_ready():
-    status = cycle([f"{len(client.users)}명과 함께하는", f"{len(client.guilds)}개의 서버에 참여하는", f"노래 부르는"])
     print(f"{client.user.name}봇은 준비가 완료 되었습니다.")
     print(f"[!] 참가 중인 서버 : {len(client.guilds)}개의 서버에 참여 중")  
     print(f"[!] 이용자 수 : {len(client.users)}와 함께하는 중")
