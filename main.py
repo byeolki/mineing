@@ -5,7 +5,6 @@ from discord.ext import commands
 from itertools import cycle
 from discord.commands import Option, option
 from discord_slash import SlashContext
-from cooldowns import CallableOnCooldown
 
 intents = discord.Intents.all()
 client = commands.Bot(intents = discord.Intents.all())
